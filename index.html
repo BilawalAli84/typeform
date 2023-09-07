@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form id="quiz-form">
+        <div class="quiz-container" id="quiz">
+            <div class="quiz-header" id="question1-container">
+                <h2 id="question1">Let's see if you qualify for our Automated FBA Wholesale Store!</h2>
+                <p id="text1">What monthly income range below would best match your goals for your store to earn?</p>
+                    <p id="subtext1">Knowing your monthly goal helps us determine up-front costs & helps determine how much inventory you'll need to sell to achieve your goal!</p>
+                <ul>
+                    <li>
+                        <div class="border-container">
+                            <div class="content">
+                                <p class="p1">$2,500</p>
+                                <p class="p2">PER MONTHLY</p>
+                            </div>
+                        </div>
+                        <input type="radio" name="answer1" id="a1" class="answer">
+                        <label for="a1" id="a_text1">$2,500 / month</label>
+                    </li>
+                    <li>
+                        <div class="border-container">
+                            <div class="content">
+                                <p class="p1">$5,000</p>
+                                <p class="p2">PER MONTHLY</p>
+                            </div>
+                        </div>
+                        <input type="radio" name="answer1" id="b1" class="answer">
+                        <label for="b1" id="b_text1">$5,000 / month</label>
+                    </li>
+                    <li>
+                        <div class="border-container">
+                            <div class="content">
+                                <p class="p1">$7,500</p>
+                                <p class="p2">PER MONTHLY</p>
+                            </div>
+                        </div>
+                        <input type="radio" name="answer1" id="c1" class="answer">
+                        <label for="c1" id="c_text1">$7,500 / month</label>
+                    </li>
+                    <li>
+                        <div class="border-container">
+                            <div class="content">
+                                <p class="p1">$10,000+</p>
+                                <p class="p2">PER MONTHLY</p>
+                            </div>
+                        </div>
+                        <input type="radio" name="answer1" id="d1" class="answer">
+                        <label for="d1" id="d_text1">$10,000+ / month</label>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Add more question containers following the same structure -->
+            <div class="quiz-header" id="question2-container" style="display: none;">
+                <h2 id="question2">What is your credit score?</h2>
+                <p id="text2">Having a good credit score may allow you to acquire and sell more inventory on by leveraging credit instead of cash; this may help your store grow faster and grow your business in a shorter time period.</p>
+                <ul>
+                    <li>
+                    <div class="border-container">
+                        <div class="content">
+                            <p class="p1-1">700+</p>
+                            <p class="p2-2"></p>
+                        </div>
+                    </div>
+                    <input type="radio" name="answer2" id="a2" class="answer">
+                    <label for="a2" id="a_text2">$720+</label>
+                </li>
+                 <li>
+                    <div class="border-container">
+                        <div class="content">
+                            <p class="p1-1">600</p>
+                            <p class="p2-2"></p>
+                        </div>
+                    </div>
+                    <input type="radio" name="answer2" id="b2" class="answer">
+                    <label for="b2" id="b_text2">601-719</label>
+                </li>
+                <li>
+                    <div class="border-container">
+                        <div class="content">
+                            <p class="p1-1">500</p>
+                            <p class="p2-2"></p>
+                        </div>
+                    </div>
+                    <input type="radio" name="answer2" id="c2" class="answer">
+                    <label for="c2" id="c_text2">501-600</label>
+                </li>
+                <li>
+                    <div class="border-container">
+                        <div class="content">
+                            <p class="p1-1">400</p>
+                            <p class="p2-2"></p>
+                        </div>
+                    </div>
+                    <input type="radio" name="answer2" id="d2" class="answer">
+                    <label for="d2" id="d_text2">400-500</label>
+                </li>
+                </ul>
+            </div>
+
+            <div  class="quiz-header custom-font-size" id="question3-container" style="display: none;">
+                <h2 id="question3">If given the opportunity to work with us, when would you be ready to own this income generating Amazon business?</h2>
+                <p id="text3">We only work with a select few partners per month, so need to allocate our resources and timeline to onboard you!</p>
+                <ul class="vertical-options">
+                    <li id="option">
+                
+                    <div class="border-container-3">
+                        <div class="content-1">
+                            <p class="p1"></p>
+                            <p class="p2"></p>
+                        </div>
+                    </div>
+                    <input type="radio" name="answer3" id="a3" class="answer">
+                    <label for="a3" id="a_text3"class="custom-radio-label"><span></span> Right Now</label>
+                
+                </li>
+                <li id="option">
+                    <div class="border-container-3">
+                        <div class="content-1">
+                            <p class="p1"></p>
+                            <p class="p2"></p>
+                        </div>
+                    </div>
+                    <input type="radio" name="answer3" id="c3" class="answer">
+                    <label for="c3" id="c_text3">Within 7-14 Days</label>
+                </li>
+                 <li id="option">
+                    <div class="border-container-3">
+                        <div class="content-1">
+                            <p class="p1"></p>
+                            <p class="p2"></p>
+                        </div>
+                    </div>
+                    <input type="radio" name="answer3" id="b3" class="answer">
+                    <label for="b3" id="b_text3">Within 30 Days</label>
+                </li>
+                <li id="option">
+                    <div class="border-container-3">
+                        <div class="content-1">
+                            <p class="p1"></p>
+                            <p class="p2"></p>
+                        </div>
+                    </div>
+                    <input type="radio" name="answer3" id="c3" class="answer">
+                    <label for="c3" id="c_text3">I'm Just Checking this Opportunity Out</label>
+                </li>
+                
+                </ul>
+            </div>
+
+
+            <div class="quiz-header" id="question4-container" style="display: none;">
+                <h2 id="question4">You may be a perfect fit for our FBA Wholesale Store Partnership!</h2>
+                <p id="text4">To successfully achieve your income goal of $2,500 / month, it takes at least ~$50,000 in up-front funds & then funding of ongoing inventory purchases. This is what it takes for our current clients to earn this amount every month for themselves and families.
+
+                    These funds are deployed to build your store, get it approved by Amazon to sell premium household named brands (Phillips, Vizio, Keurig, etc), and fund your first round of inventory.
+                    
+                    Do you have at least $50,000 in up-front capital?
+                    Our team's time is very valuable; if you do not have the funds or mark that you do not, our team will not be able to schedule time to move forward with you.</p>
+                <ul>
+                    <li>
+                    <div class="border-container">
+                        <div class="content">
+                            <p class="p1">yes</p>
+                            <p class="p2"></p>
+                        </div>
+                    </div>
+                    <input type="radio" name="answer4" id="a4" class="answer">
+                    <label for="a4" id="a_text4">Yes</label>
+                </li>
+                 <li>
+                    <div class="border-container">
+                        <div class="content">
+                            <p class="p1">No</p>
+                            <p class="p2"></p>
+                        </div>
+                    </div>
+                    <input type="radio" name="answer4" id="b4" class="answer">
+                    <label for="b4" id="b_text4">No</label>
+                </li>
+                </ul>
+            </div>
+
+            <div class="quiz-header" id="question5-container" style="display: none;">
+                <h2 id="question5">There are a ton of success stories of our current clients making $2,500 / month with their Amazon FBA Wholesale Store, and we'd love to send these to you now that you've completed your qualification!</h2>
+                <div class="input-block">
+                    <div class="label">What is your first name?</div>
+                    <div class="input-control">
+                        <input type="text" class="required" id="first-name-input" autocomplete="off" placeholder="Type Your Answer Here">
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-header" id="question6-container" style="display: none;">
+                <h2 id="question6">What is your last name?</h2>
+                <div class="input-block">
+                    <div class="label">What is your last name?</div>
+                    <div class="input-control">
+                        <input type="text" class="required" id="last-name-input" autocomplete="off" placeholder="Type Your Answer Here">
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-header" id="question7-container" style="display: none;">
+                <h2 id="question7">What is your email address?</h2>
+                <div class="input-block">
+                    <div class="label">What is your email address?</div>
+                    <div class="input-control">
+                        <input type="email" class="required" id="email-input" autocomplete="off" placeholder="name@example.com">
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-header" id="question8-container" style="display: none;">
+                <h2 id="question8">What's the best number to reach you at?</h2>
+                <p id="text8">(Just in case you can't find a time on our calendar that works for you)</p>
+                <div class="input-block">
+                    <div class="label">Phone Number:</div>
+                    <div class="input-control">
+                        <input type="tel" class="required" id="phone-input" autocomplete="off" placeholder="(201)555-0123">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add more question containers here with unique IDs and content -->
+
+            <button type="button" id="submit-button">Submit</button>
+        </div>
+    </form>
+
+    <script>
+        const questionContainers = document.querySelectorAll('.quiz-header');
+        const submitButton = document.getElementById('submit-button');
+        const firstNameInput = document.getElementById('first-name-input');
+        const lastNameInput = document.getElementById('last-name-input');
+        const emailInput = document.getElementById('email-input');
+        const phoneInput = document.getElementById('phone-input');
+
+        let currentQuestion = 0; // Track the current question number
+        let userData = {}; // Object to store user data
+
+        function showNextQuestion() {
+            questionContainers[currentQuestion].style.display = 'none'; // Hide the current question
+            currentQuestion++; // Move to the next question
+            if (currentQuestion < questionContainers.length) {
+            questionContainers[currentQuestion].style.display = 'block'; // Show the next question
+            } else {
+            // All questions are answered, hide the submit button
+            submitButton.style.display = 'none';
+            console.log(userData);
+            sendDataToWebhook(userData); // Send user data to the webhook
+            }
+        }
+
+        submitButton.addEventListener('click', function () {
+            if (currentQuestion === 4) {
+            // Handle the first name question
+            const firstName = firstNameInput.value.trim();
+            if (firstName === '') {
+                alert('Please enter your first name.');
+                return;
+            }
+            userData.firstName = firstName; // Save the first name in the user data object
+            } else if (currentQuestion === 5) {
+            // Handle the last name question
+            const lastName = lastNameInput.value.trim();
+            if (lastName === '') {
+                alert('Please enter your last name.');
+                return;
+            }
+            userData.lastName = lastName; // Save the last name in the user data object
+            } else if (currentQuestion === 6) {
+            // Handle the email question
+            const email = emailInput.value.trim();
+            if (email === '') {
+                alert('Please enter your email address.');
+                return;
+            } else if (!validateEmail(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            userData.email = email; // Save the email in the user data object
+            } else if (currentQuestion === 7) {
+            // Handle the phone number question
+            const phone = phoneInput.value.trim();
+            if (phone === '') {
+                alert('Please enter your phone number.');
+                return;
+            }
+            userData.phone = phone; // Save the phone number in the user data object
+            } else {
+                // Handle radio button questions
+                const selectedOption = document.querySelector(`input[name="answer${currentQuestion + 1}"]:checked`);
+                if (!selectedOption) {
+                alert(`Please select an option for Question ${currentQuestion + 1} before moving to the next question.`);
+                return;
+                }
+                const questionNumber = currentQuestion + 1;
+                const labelElement = selectedOption.labels[0]; // Get the associated label element
+                if (labelElement) {
+                userData[`question${questionNumber}`] = labelElement.textContent.trim(); // Save the label text content
+                } else {
+                userData[`question${questionNumber}`] = ''; // Handle the case where there is no associated label
+                }
+            }
+            
+
+            showNextQuestion();
+        });
+
+        // Validate email function
+        function validateEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        // Function to send user data to the webhook (replace with your actual webhook URL)
+        function sendDataToWebhook(data) {
+            const webhookUrl = 'https://hooks.zapier.com/hooks/catch/14863026/3r4zcod/';
+            fetch(webhookUrl, {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            })
+            .then((response) => {
+                if (response.ok) {
+                console.log('Data sent successfully to the webhook.');
+                } else {
+                console.error('Failed to send data to the webhook.');
+                }
+            })
+            .catch((error) => {
+                console.error('Error sending data to the webhook:', error);
+            });
+
+            if (data.question4 === "Yes") {
+                console.log(data.question4);
+                if(data.question2==="$720+" || data.question2==="601-719")
+                {
+                    window.location.href = 'https://www.ecomauthority.co/book';
+                }
+                else{
+                    console.log(data.question2);
+                    window.location.href = 'https://www.ecomauthority.co/unqualified';
+                }
+            }
+            else{
+                console.log(data.question2);
+                window.location.href = 'https://www.ecomauthority.co/unqualified';
+            }
+        }
+
+        // Show the first question initially
+        questionContainers[currentQuestion].style.display = 'block';
+    </script>
+
+</body>
+</html>
