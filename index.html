@@ -346,26 +346,26 @@
             };
 
             // Convert the data object to JSON
-            var jsonData = JSON.stringify(data);
+            // var jsonData = JSON.stringify(data);
 
-            // Send the request with the JSON data
-            xhr.send(jsonData);
+            // // Send the request with the JSON data
+            // xhr.send(jsonData);
 
-            if (data.question4 === "Yes") {
-                console.log(data.question4);
-                if(data.question2==="$720+" || data.question2==="601-719")
-                {
-                    window.location.href = 'https://www.ecomauthority.co/book';
-                }
-                else{
-                    console.log(data.question2);
-                    window.location.href = 'https://www.ecomauthority.co/unqualified';
-                }
-            }
-            else{
-                console.log(data.question2);
-                window.location.href = 'https://www.ecomauthority.co/unqualified';
-            }
+            // if (data.question4 === "Yes") {
+            //     console.log(data.question4);
+            //     if(data.question2==="$720+" || data.question2==="601-719")
+            //     {
+            //         window.location.href = 'https://www.ecomauthority.co/book';
+            //     }
+            //     else{
+            //         console.log(data.question2);
+            //         window.location.href = 'https://www.ecomauthority.co/unqualified';
+            //     }
+            // }
+            // else{
+            //     console.log(data.question2);
+            //     window.location.href = 'https://www.ecomauthority.co/unqualified';
+            // }
         }
 
         // Show the first question initially
