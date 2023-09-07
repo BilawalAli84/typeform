@@ -130,7 +130,7 @@
                         </div>
                     </div>
                     <input type="radio" name="answer3" id="c3" class="answer">
-                    <label for="c3" id="c_text3">Within 7-14 Days</label>
+                    <label for="c3" id="b_text3">Within 7-14 Days</label>
                 </li>
                  <li id="option">
                     <div class="border-container-3">
@@ -140,7 +140,7 @@
                         </div>
                     </div>
                     <input type="radio" name="answer3" id="b3" class="answer">
-                    <label for="b3" id="b_text3">Within 30 Days</label>
+                    <label for="b3" id="c_text3">Within 30 Days</label>
                 </li>
                 <li id="option">
                     <div class="border-container-3">
@@ -150,7 +150,7 @@
                         </div>
                     </div>
                     <input type="radio" name="answer3" id="c3" class="answer">
-                    <label for="c3" id="c_text3">I'm Just Checking this Opportunity Out</label>
+                    <label for="c3" id="d_text3">I'm Just Checking this Opportunity Out</label>
                 </li>
                 
                 </ul>
@@ -343,27 +343,26 @@
                 console.error('Error sending data to the webhook:', error);
                 });
 
-            // Convert the data object to JSON
-            // var jsonData = JSON.stringify(data);
+            var jsonData = JSON.stringify(data);
 
-            // // Send the request with the JSON data
-            // xhr.send(jsonData);
+            // Send the request with the JSON data
+            xhr.send(jsonData);
 
-            // if (data.question4 === "Yes") {
-            //     console.log(data.question4);
-            //     if(data.question2==="$720+" || data.question2==="601-719")
-            //     {
-            //         window.location.href = 'https://www.ecomauthority.co/book';
-            //     }
-            //     else{
-            //         console.log(data.question2);
-            //         window.location.href = 'https://www.ecomauthority.co/unqualified';
-            //     }
-            // }
-            // else{
-            //     console.log(data.question2);
-            //     window.location.href = 'https://www.ecomauthority.co/unqualified';
-            // }
+            if (data.question4 === "Yes") {
+                console.log(data.question4);
+                if(data.question2==="$720+" || data.question2==="601-719")
+                {
+                    window.location.href = 'https://www.ecomauthority.co/book';
+                }
+                else{
+                    console.log(data.question2);
+                    window.location.href = 'https://www.ecomauthority.co/unqualified';
+                }
+            }
+            else{
+                console.log(data.question2);
+                window.location.href = 'https://www.ecomauthority.co/unqualified';
+            }
         }
 
         // Show the first question initially
