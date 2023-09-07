@@ -324,14 +324,12 @@
 
         // Function to send user data to the webhook (replace with your actual webhook URL)
         function sendDataToWebhook(data) {
+            console.log("hi in it ");
             const webhookUrl = 'https://hooks.zapier.com/hooks/catch/14863026/3r4fr2r/';
 
             // Configure the request
             fetch(webhookUrl, {
                 method: 'POST',
-                headers: {
-                'Content-Type': 'application/json',
-                },
                 body: JSON.stringify(data), // Convert data to JSON
             })
                 .then((response) => {
